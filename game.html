@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>game</title>
+    <style>
+        #id-canvas {
+            border: 1px solid red;
+        }
+        #id-text-log {
+            border: 1px solid red;
+            background: whitesmoke;
+            position: absolute;
+            right: 8px;
+            top: 0;
+        }
+        .background{
+            width: 1100px;
+            border: 1px solid gray;
+            position: relative;
+        }
+    </style>
+    <script src="utils.js"></script>
+    <script src="block.js"></script>
+    <script src="ball.js"></script>
+    <script src="paddle.js"></script>
+    <script src="game.js"></script>
+    <script src="level.js"></script>
+    <script src="scene.js"></script>
+</head>
+<body>
+    <div class="background">
+        <canvas id="id-canvas" width="500" height="350"></canvas>
+        <hr>
+        <input type="range" id="id-input-speed" value="1">
+        <div>
+            <textarea id="id-text-log" cols="70" rows="23"></textarea>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
